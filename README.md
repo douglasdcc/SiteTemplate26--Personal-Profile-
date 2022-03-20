@@ -12,6 +12,7 @@
 
 <p align="center">Studying website developed modifying the code from <a href="https://www.youtube.com/channel/UCkjoHfkLEy7ZT4bA2myJ8xA">Easy Tutorials</a>,
  available <a href="https://www.youtube.com/watch?v=qXXknB5bePU">here</a>.</p>
+ <p align="center">Made the site responsive, added hover animations, changed fonts and minor layout changes.</p>
  <br/>
 
 ### Technologies
