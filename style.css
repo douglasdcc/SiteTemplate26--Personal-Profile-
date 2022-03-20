@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(image/background.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.navbar{
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 160px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.cart{
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    width: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.cart:hover{
+    transform: scale(1.08);
+}
+
+nav{
+    flex: 1;
+    padding-left: 60px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+
+nav ul li a{
+    font-size: 1.1em;
+    text-decoration: none;
+    line-height: 3em;
+    color: #333;
+    transition: 0.2s ease;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid #ff77cd;
+}
+
+.content h1{
+    font-size: clamp(1.8rem, 4vw, 60px);
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #232d60;
+    width: fit-content;
+}
+
+.content p{
+    font-size: 20px;
+    color: #6a7199;
+    width: fit-content;
+}
+
+.content{
+    margin-left: 10%;
+    margin-top: 10%;
+    max-width: 1280px;
+}
+
+.content .btn{
+    display: inline-block;
+    background: linear-gradient(45deg, #87adfe, #ff77cd);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+    transition: 0.5s;
+}
+
+.hover-effect:hover{
+    transform:  scale(1.04);
+    box-shadow: 8px 18px 28px rgba(94,28,68,0.15);
+}
+
+.arrow-icons{
+    margin-top: 40px;
+    display: flex;
+    width: fit-content;
+}
+
+.arrow-icons img{
+    width: 40px;
+    margin-right: 25px;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.feature-img{
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 120px;
+    transition: 0.5s;
+}
+
+.social-links{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -80px;
+    top: 50%;
+}
+
+.social-links a{
+    text-decoration: none;
+    color: #6a7199;
+    margin-right: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.social-links a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    transform: translateX(-100%);
+    background: #ff77cd;
+    transition: width 0.5s;
+}
+
+.social-links a:hover::after{
+    width: 20%;
+}
+
+/*.social-links a:hover{
+    border-bottom: 1px solid #ff77cd;
+}*/
+
+@media (max-width: 991px){
+    .container{
+        overflow-y: scroll;
+    }
+    nav ul{
+        display: none;
+    }
+    nav ul li a{
+        font-size: 2em;
+    }
+    .toggle{
+        position: absolute;
+        right: 30px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url(image/menu.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+        z-index: 11;
+    }
+    .toggle.active{
+        right: 30px;
+        background: url(image/close.png);
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    nav ul.navigation.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #ff77cd;
+        z-index: 10;
+    }
+    .feature-img{
+        top: 70vh;
+        right: 10%;
+        height: 70%;
+    }
+}
+
+@media (max-width: 600px){
+    .feature-img{
+        height: 60%;
+        right: 4%;
+    }
+    .social-links{
+        left: -110px;
+    }
+}
