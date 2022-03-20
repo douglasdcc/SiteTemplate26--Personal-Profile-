@@ -7,25 +7,28 @@
  <a href="#author">Author</a>
 </p>
 
-### 🚀 Goal
+### Goal
 ---
 
 <p align="center">Studying website developed modifying the code from <a href="https://www.youtube.com/channel/UCkjoHfkLEy7ZT4bA2myJ8xA">Easy Tutorials</a>,
  available <a href="https://www.youtube.com/watch?v=qXXknB5bePU">here</a>.</p>
+ <br/>
 
-### 🛠 Technologies
+### Technologies
 ---
 
 - [HTML5](https://www.w3.org/standards/webdesign/htmlcss)
 - [CSS3](https://www.w3.org/standards/webdesign/htmlcss)
 - [JAVASCRIPT](https://www.javascript.com/)
+<br/>
 
 ### License
 ---
 
 <p align="center"><img src="image/license-MIT-green.svg"></p>
+<br/>
 
-### ✅ Author
+### Author
 ---
 
 <a>
